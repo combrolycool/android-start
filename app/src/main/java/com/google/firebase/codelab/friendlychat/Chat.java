@@ -68,10 +68,10 @@ public class Chat extends AppCompatActivity {
                 String userName = map.get("user").toString();
 
                 if(userName.equals(UserDetails.username)){
-                    addMessageBox("You:-\n" + message, 1);
+                    addMessageBox("  You:-  \n  " + message+"  ", 1);
                 }
                 else{
-                    addMessageBox(UserDetails.chatWith + ":-\n" + message, 2);
+                    addMessageBox("  "+UserDetails.chatWith + ":-  \n  " + message +"  ", 2);
                 }
             }
 
@@ -99,9 +99,11 @@ public class Chat extends AppCompatActivity {
 
     public void addMessageBox(String message, int type){
         TextView textView = new TextView(Chat.this);
+        textView.setPadding(10,10,10,10);
         textView.setText(message);
 
         LinearLayout.LayoutParams lp2 = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        lp2.setMargins(3,3,3,3);
         lp2.weight = 1.0f;
 
         if(type == 1) {
