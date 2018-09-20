@@ -10,9 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2065fc7d-5508-4f34-8920-c26163bd0d73" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/AdminLogin.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/CompanyUsers.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_admin.xml" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
@@ -21,15 +18,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/Company.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/Company.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/Login.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/Login.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/Register.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/Register.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/Chat.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/Chat.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/UserDetails.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/UserDetails.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/Users.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/Users.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -83,14 +75,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Users.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/Users.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="64" column="37" lean-forward="false" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Chat.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/Chat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="54" column="58" lean-forward="true" selection-start-line="54" selection-start-column="58" selection-end-line="54" selection-end-column="58" />
-              <folding>
-                <element signature="e#1955#1971#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="300">
+              <caret line="72" column="36" lean-forward="false" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDetails.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/UserDetails.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -2242,20 +2252,17 @@
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_in.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_user.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/UserDetails.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/message_area.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/border.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/border.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_users.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activit_chat.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/Chat.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_newcompany.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/NewCompany.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_compania.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/CompanyDetails.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/Users.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/CompanyUsers.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/Company.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_admin.xml" />
@@ -2265,10 +2272,13 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/Login.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/Register.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/Users.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/UserDetails.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/Chat.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -2545,7 +2555,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2580,39 +2590,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293718" sideWeight="0.5030257" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293718" sideWeight="0.4969743" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Assistant" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39898133" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28895614" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -2628,9 +2605,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="e#1955#1971#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2801,14 +2776,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/UserDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/MyFirebaseMessagingService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -2972,21 +2939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/Users.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-172">
-          <caret line="30" column="22" lean-forward="false" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-          <folding>
-            <element signature="e#1488#1645#0" expanded="false" />
-            <element signature="e#1644#1645#0" expanded="false" />
-            <element signature="e#1646#1842#0" expanded="false" />
-            <element signature="e#1841#1842#0" expanded="false" />
-            <element signature="e#1983#2287#0" expanded="false" />
-            <element signature="e#2286#2287#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/Company.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
@@ -3000,16 +2952,16 @@
         <state relative-caret-position="153">
           <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
           <folding>
-            <element signature="e#1546#1733#0" expanded="true" />
-            <element signature="e#1732#1733#0" expanded="true" />
-            <element signature="e#1770#1957#0" expanded="true" />
-            <element signature="e#1956#1957#0" expanded="true" />
-            <element signature="e#2734#4042#0" expanded="true" />
-            <element signature="e#4041#4042#0" expanded="true" />
-            <element signature="e#4710#4867#0" expanded="true" />
-            <element signature="e#4866#4867#0" expanded="true" />
-            <element signature="e#4868#5064#0" expanded="true" />
-            <element signature="e#5063#5064#0" expanded="true" />
+            <element signature="e#1546#1733#0" expanded="false" />
+            <element signature="e#1732#1733#0" expanded="false" />
+            <element signature="e#1770#1957#0" expanded="false" />
+            <element signature="e#1956#1957#0" expanded="false" />
+            <element signature="e#2734#4042#0" expanded="false" />
+            <element signature="e#4041#4042#0" expanded="false" />
+            <element signature="e#4710#4867#0" expanded="false" />
+            <element signature="e#4866#4867#0" expanded="false" />
+            <element signature="e#4868#5064#0" expanded="false" />
+            <element signature="e#5063#5064#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3019,8 +2971,8 @@
         <state relative-caret-position="238">
           <caret line="74" column="52" lean-forward="false" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="52" />
           <folding>
-            <element signature="e#1252#1443#0" expanded="true" />
-            <element signature="e#1442#1443#0" expanded="true" />
+            <element signature="e#1252#1443#0" expanded="false" />
+            <element signature="e#1442#1443#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3041,7 +2993,7 @@
         <state relative-caret-position="-766">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="34" />
           <folding>
-            <element signature="e#328#363#0" expanded="true" />
+            <element signature="e#328#363#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3084,13 +3036,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/UserDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/Users.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="64" column="37" lean-forward="false" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/google/firebase/codelab/friendlychat/Chat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="54" column="58" lean-forward="true" selection-start-line="54" selection-start-column="58" selection-end-line="54" selection-end-column="58" />
-          <folding>
-            <element signature="e#1955#1971#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="300">
+          <caret line="72" column="36" lean-forward="false" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>

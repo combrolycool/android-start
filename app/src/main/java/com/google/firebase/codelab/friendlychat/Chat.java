@@ -17,6 +17,9 @@ import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -40,9 +43,15 @@ public class Chat extends AppCompatActivity {
         messageArea = (EditText)findViewById(R.id.messageArea);
         scrollView = (ScrollView)findViewById(R.id.scrollView);
 
+        ArrayList<String> newName = new ArrayList<>();
+        newName.add(UserDetails.username);
+        newName.add(UserDetails.username2);
+        Collections.sort(newName);
+        String campo1 = newName.get(0);
+        String campo2 = newName.get(1);
+
         Firebase.setAndroidContext(this);
-        reference1 = new Firebase("https://friendlychat-5677b.firebaseio.com/chat/" + UserDetails.username + "_" + UserDetails.chatWith);
-        reference2 = new Firebase("https://friendlychat-5677b.firebaseio.com/chat/" + UserDetails.chatWith + "_" + UserDetails.username);
+        reference1 = new Firebase("https://friendlychat-5677b.firebaseio.com/compania/"+CompanyDetails.companyName+"/chat/" + campo1 + "_" + campo2);
 
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,11 +59,10 @@ public class Chat extends AppCompatActivity {
                 String messageText = messageArea.getText().toString();
 
                 if(!messageText.equals("")){
-                    Map<String, String> map = new HashMap<String, String>();
+                    Map<String, String> map = new HashMap<>();
                     map.put("message", messageText);
                     map.put("user", UserDetails.username);
                     reference1.push().setValue(map);
-                    reference2.push().setValue(map);
                     messageArea.setText("");
                 }
             }
@@ -71,7 +79,7 @@ public class Chat extends AppCompatActivity {
                     addMessageBox("  You:-  \n  " + message+"  ", 1);
                 }
                 else{
-                    addMessageBox("  "+UserDetails.chatWith + ":-  \n  " + message +"  ", 2);
+                    addMessageBox("  "+UserDetails.username2 + ":-  \n  " + message +"  ", 2);
                 }
             }
 
