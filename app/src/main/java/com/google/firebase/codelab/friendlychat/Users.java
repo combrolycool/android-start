@@ -42,7 +42,7 @@ public class Users extends AppCompatActivity {
         pd.setMessage("Loading...");
         pd.show();
 
-        String url = "https://friendlychat-5677b.firebaseio.com/users.json";
+        String url = "https://friendlychat-5677b.firebaseio.com/compania/"+CompanyDetails.companyName+"/users.json";
 
         StringRequest request = new StringRequest(Request.Method.GET, url, new Response.Listener<String>(){
             @Override

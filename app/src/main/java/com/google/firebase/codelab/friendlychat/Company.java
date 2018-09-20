@@ -67,8 +67,9 @@ public class Company extends AppCompatActivity {
         companyList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                CompanyDetails.companyName = companyList.getItemAtPosition(position).toString();
                 CompanyDetails.chatAndUser = al.get(position);
-                startActivity(new Intent(Company.this, Users.class));
+                startActivity(new Intent(Company.this, CompanyUsers.class));
             }
         });
 
@@ -89,10 +90,7 @@ public class Company extends AppCompatActivity {
 
             while (i.hasNext()) {
                 key = i.next().toString();
-
-                if (!key.equals(CompanyDetails.companyName)) {
-                    al.add(key);
-                }
+                al.add(key);
 
                 totalCompany++;
             }

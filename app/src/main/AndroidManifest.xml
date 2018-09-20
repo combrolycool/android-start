@@ -10,8 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-
-        <activity android:name=".Company">
+        <activity android:name="com.google.firebase.codelab.friendlychat.Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -28,9 +27,10 @@
             </intent-filter>
         </activity>
 
-
-        <activity android:name=".Login"/>
+        <activity android:name="com.google.firebase.codelab.friendlychat.AdminLogin"/>
+        <activity android:name="com.google.firebase.codelab.friendlychat.Company"/>
         <activity android:name="com.google.firebase.codelab.friendlychat.MainActivity"/>
+        <activity android:name="com.google.firebase.codelab.friendlychat.CompanyUsers"/>
         <activity android:name="com.google.firebase.codelab.friendlychat.NewCompany"/>
         <activity android:name="com.google.firebase.codelab.friendlychat.Register" />
         <activity android:name="com.google.firebase.codelab.friendlychat.Users" />

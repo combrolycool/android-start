@@ -12,6 +12,14 @@
     android:gravity="center">
 
     <TextView
+        android:id="@+id/RegisterNoCompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="No hay instituciones agregadas"
+        android:visibility="gone" />
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Register"
@@ -20,22 +28,20 @@
         android:layout_marginBottom="20dp"/>
 
     <EditText
+        android:id="@+id/RegisterUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/username"
-        android:inputType="text"
-        android:maxLines="1"
+        android:layout_marginBottom="10dp"
         android:hint="enter username"
-        android:layout_marginBottom="10dp"/>
+        android:inputType="text"
+        android:maxLines="1" />
 
-    <EditText
+    <Spinner
+        android:id="@+id/RegisterSpinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/password"
-        android:inputType="textPassword"
-        android:maxLines="1"
-        android:hint="enter password"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp" />
 
     <Button
         android:layout_width="match_parent"

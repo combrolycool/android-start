@@ -5,8 +5,10 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,23 +23,30 @@ import com.firebase.client.Firebase;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 public class Register extends AppCompatActivity {
-    EditText username, password;
+    EditText username;
     Button registerButton;
-    String user, pass;
-    TextView login;
+    String user, RegisterCompanySelected;
+    TextView login, RegisterNoCompany;
+    Spinner RegisterSpinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        username = (EditText)findViewById(R.id.username);
-        password = (EditText)findViewById(R.id.password);
+        username = (EditText)findViewById(R.id.RegisterUsername);
         registerButton = (Button)findViewById(R.id.registerButton);
         login = (TextView)findViewById(R.id.login);
+        RegisterSpinner = findViewById(R.id.RegisterSpinner);
+        RegisterNoCompany = findViewById(R.id.RegisterNoCompany);
 
         Firebase.setAndroidContext(this);
+        addItemsOnSpinner();
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,13 +59,10 @@ public class Register extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 user = username.getText().toString();
-                pass = password.getText().toString();
+                RegisterCompanySelected = String.valueOf(RegisterSpinner.getSelectedItem().toString());
 
                 if(user.equals("")){
                     username.setError("can't be blank");
-                }
-                else if(pass.equals("")){
-                    password.setError("can't be blank");
                 }
                 else if(!user.matches("[A-Za-z0-9]+")){
                     username.setError("only alphabet or number allowed");
@@ -64,23 +70,20 @@ public class Register extends AppCompatActivity {
                 else if(user.length()<5){
                     username.setError("at least 5 characters long");
                 }
-                else if(pass.length()<5){
-                    password.setError("at least 5 characters long");
-                }
                 else {
                     final ProgressDialog pd = new ProgressDialog(Register.this);
                     pd.setMessage("Loading...");
                     pd.show();
 
-                    String url = "https://friendlychat-5677b.firebaseio.com/users.json";
+                    String url = "https://friendlychat-5677b.firebaseio.com/compania/"+RegisterCompanySelected+"/users.json";
 
                     StringRequest request = new StringRequest(Request.Method.GET, url, new Response.Listener<String>(){
                         @Override
                         public void onResponse(String s) {
-                            Firebase reference = new Firebase("https://friendlychat-5677b.firebaseio.com/users");
+                            Firebase reference = new Firebase("https://friendlychat-5677b.firebaseio.com/compania/"+RegisterCompanySelected+"/users");
 
                             if(s.equals("null")) {
-                                reference.child(user).child("password").setValue(pass);
+                                reference.child(user).setValue(RegisterCompanySelected);
                                 Toast.makeText(Register.this, "registration successful", Toast.LENGTH_LONG).show();
                                 startActivity(new Intent(Register.this, Login.class));
                             }
@@ -89,7 +92,7 @@ public class Register extends AppCompatActivity {
                                     JSONObject obj = new JSONObject(s);
 
                                     if (!obj.has(user)) {
-                                        reference.child(user).child("password").setValue(pass);
+                                        reference.child(user).setValue(RegisterCompanySelected);
                                         Toast.makeText(Register.this, "registration successful", Toast.LENGTH_LONG).show();
                                         startActivity(new Intent(Register.this, Login.class));
                                     } else {
@@ -118,4 +121,57 @@ public class Register extends AppCompatActivity {
             }
         });
     }
+
+    public void addItemsOnSpinner(){
+
+        String url = "https://friendlychat-5677b.firebaseio.com/compania.json";
+
+        StringRequest request = new StringRequest(Request.Method.GET, url, new Response.Listener<String>(){
+            @Override
+            public void onResponse(String s) {
+                doOnSuccess(s);
+            }
+        },new Response.ErrorListener(){
+            @Override
+            public void onErrorResponse(VolleyError volleyError) {
+                System.out.println("" + volleyError);
+            }
+        });
+
+        RequestQueue rQueue = Volley.newRequestQueue(Register.this);
+        rQueue.add(request);
+    }
+
+    public void doOnSuccess(String s) {
+
+        List<String> al = new ArrayList<>();
+        int totalCompany = 0;
+
+        try {
+            JSONObject obj = new JSONObject(s);
+
+            Iterator i = obj.keys();
+            String key = "";
+
+            while (i.hasNext()) {
+                key = i.next().toString();
+                al.add(key);
+
+                totalCompany++;
+            }
+        }catch (JSONException e) {
+            e.printStackTrace();
+        }
+        if (totalCompany >= 1) {
+            List<String> al2 = new ArrayList<>(al);
+            ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(this,
+                    android.R.layout.simple_spinner_item, al2);
+            dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            RegisterSpinner.setAdapter(dataAdapter);
+        }else{
+            RegisterNoCompany.setVisibility(View.VISIBLE);
+            RegisterSpinner.setVisibility(View.GONE);
+        }
+    }
+
 }
