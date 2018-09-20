@@ -11,12 +11,11 @@
         android:theme="@style/AppTheme">
 
 
-        <activity android:name=".Login">
+        <activity android:name=".Company">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -30,21 +29,9 @@
         </activity>
 
 
-        <activity android:name="com.google.firebase.codelab.friendlychat.MainActivity">
-
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
-                <data
-                    android:host="friendlychat.firebase.google.com"
-                    android:scheme="http"
-                    android:pathPrefix="/message"
-                    />
-            </intent-filter>
-        </activity>
-
-
+        <activity android:name=".Login"/>
+        <activity android:name="com.google.firebase.codelab.friendlychat.MainActivity"/>
+        <activity android:name="com.google.firebase.codelab.friendlychat.NewCompany"/>
         <activity android:name="com.google.firebase.codelab.friendlychat.Register" />
         <activity android:name="com.google.firebase.codelab.friendlychat.Users" />
         <activity android:name="com.google.firebase.codelab.friendlychat.Chat" />
