@@ -27,9 +27,13 @@
             </intent-filter>
         </activity>
 
+        <activity android:name="com.google.firebase.codelab.friendlychat.FrameClass"/>
         <activity android:name="com.google.firebase.codelab.friendlychat.AdminLogin"/>
+        <activity android:name="com.google.firebase.codelab.friendlychat.AdminNotificationRecieve"/>
         <activity android:name="com.google.firebase.codelab.friendlychat.Company"/>
+        <activity android:name="com.google.firebase.codelab.friendlychat.CompanyMessagesRecieve"/>
         <activity android:name="com.google.firebase.codelab.friendlychat.MainActivity"/>
+        <activity android:name="com.google.firebase.codelab.friendlychat.AdminNotifications"/>
         <activity android:name="com.google.firebase.codelab.friendlychat.CompanyUsers"/>
         <activity android:name="com.google.firebase.codelab.friendlychat.NewCompany"/>
         <activity android:name="com.google.firebase.codelab.friendlychat.Register" />

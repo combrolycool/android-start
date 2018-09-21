@@ -60,13 +60,14 @@ public class CompanyUsers extends AppCompatActivity {
         RequestQueue rQueue = Volley.newRequestQueue(CompanyUsers.this);
         rQueue.add(request);
 
-        CompanyUsersList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                CompanyDetails.chatAndUser = al.get(position);
-                startActivity(new Intent(CompanyUsers.this, Chat.class));
-            }
-        });
+        //chat admin user
+//        CompanyUsersList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                CompanyDetails.chatAndUser = al.get(position);
+//                startActivity(new Intent(CompanyUsers.this, Chat.class));
+//            }
+//        });
     }
 
     public void doOnSuccess(String s){
